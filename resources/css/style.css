@@ -227,15 +227,17 @@ div#shadowed {
 
   .widget {
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .widget img {
-    width: 92.5%;
+    width: 90%;
   }
 
   div.text {
-    padding-left: 16px;
+    padding-left: 32px;
     padding-bottom: 16px;
+    width: 100%;
   }
 
   div.text h3 {
@@ -246,7 +248,7 @@ div#shadowed {
     margin: 7px 0;
   }
 
-  div#shadowed {
+  div#bordered {
     border-bottom: solid 1px silver;
     padding-bottom: 32px;
   }
@@ -294,6 +296,46 @@ section#learning h1 {
   margin: 0;
 }
 
+/*----------- Learning Mobile -----------*/
+
+@media only screen and (min-width: 768px) {
+  .mobile.learning {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  section#learning {
+    display: none;
+  }
+
+  .mobile.learning h1 {
+    margin: 0;
+    padding-top: 32px;
+    padding-bottom: 16px;
+    text-align: center;
+  }
+
+  .mobile.learning p {
+    background-color: #d8d8d8;
+    color: #4a4a4a;
+    padding: 16px;
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 8px;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+  div.course-buttons {
+    padding-bottom: 32px;
+    border-bottom: solid 1px silver;
+  }
+
+}
+
+
+
 /*----------- Practice 2 ----------*/
 
  h1.thesis {
@@ -319,6 +361,36 @@ div#one shadowed.widget {
   background-color: #d8d8d8;
 }
 
+
+/*----------- Practice 2 Mobile ----------*/
+
+@media only screen and (min-width: 768px) {
+  .mobile.thesis {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  h1.thesis {
+    display:none;
+  }
+
+  .mobile.thesis h1 {
+    padding: 32px 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .mobile.thesis video {
+    width: 100%;
+  }
+
+  div.mobile.thesis {
+    padding-bottom: 24px;
+  }
+
+}
+
 /*----------- Footer----------*/
 
 
@@ -328,7 +400,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 46px;
+  margin-bottom: 32px;
 }
 
 div.nav {
@@ -338,4 +410,28 @@ div.nav {
 
 .nav span {
   padding-left: 16px;
+}
+
+
+/*----------- Footer Mobile ----------*/
+
+@media only screen and (max-width: 768px) {
+  div#boss p {
+    background-color: inherit;
+    color: #4a4a4a;
+    padding: 16px;
+    width: auto;
+    margin: 0 auto;
+    font-size: .75rem;
+    font-weight: 500;
+  }
+
+  div.nav {
+    display: none;
+  }
+
+  footer {
+    margin: 0;
+    padding: 0;
+  }
 }
