@@ -1,0 +1,229 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: #4a4a4a;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+/*----------- Header ----------*/
+
+.header {
+  width:100%;
+  position: fixed;
+  height: 64px;
+  background-color: white;
+}
+
+div.desktop.logo {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+nav.desktop.menu {
+  width: 100%;
+}
+
+ul {
+  display:flex;
+  justify-content: flex-end;
+  padding-right: 16px;
+}
+
+nav.desktop.menu ul li {
+  display: inline;
+  padding-right: 20px;
+}
+
+/*----------- Banner ----------*/
+
+#banner.container {
+  background-color: #d8d8d8;
+}
+
+.main {
+  margin-top: 64px;
+  width: 60%;
+}
+
+.main img {
+  padding-top: 32px;
+  padding-left: 24px;
+  padding-bottom: 32px;
+  padding-right: 42px;
+  width: 100%;
+}
+
+.banner.content {
+  padding-left: 23px;
+  margin-left: 40px;
+  width: 30%;
+}
+
+.banner.content h1 {
+  font-size: 2.5rem
+}
+
+.banner.content p {
+  font-size: 1.5rem
+}
+
+.banner.content p.button {
+  color: white;
+  background-color: #4a4a4a;
+  text-align: center;
+  padding: 8px;
+}
+
+.banner.content p.button:hover {
+  background-color: black;
+  transition: background-color .7s ease-in;
+}
+
+/*----------- Practice ----------*/
+
+#practice.container {
+  align-items: flex-start;
+}
+
+.primary {
+  width: 60%;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 26px;
+  border-right: solid .1px silver;
+}
+
+.primary img {
+  padding-top: 32px;
+  width: 100%;
+}
+
+.information {
+  width: 40%;
+}
+
+.widget {
+  display: flex;
+  align-items: center;
+}
+
+div#one {
+    padding-top: 16px;
+}
+
+.widget img {
+  width:35%;
+  padding:16px;
+}
+
+div#shadowed {
+  background-color: #d8d8d8;
+}
+
+.widget.text {
+  display: flex;
+  flex-direction: column;
+}
+
+.primary h2 {
+  font-size: 2rem;
+  margin-top: 32px;
+}
+
+
+/*----------- Learning -----------*/
+
+section#learning {
+  background-color: #d8d8d8;
+  display: flex;
+  flex-direction: column;
+}
+
+section#learning h1 {
+  margin: 32px 0;
+  font-size: 1.75rem;
+}
+
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.course-box {
+  background-color: white;
+  width: 26%;
+  margin-right: 32px;
+  margin-bottom: 16px;
+}
+
+.course-box .content {
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-bottom: 24px;
+}
+
+.course-box img {
+  width: 100%;
+}
+
+.content h2 {
+  margin: 0;
+}
+
+/*----------- Practice 2 ----------*/
+
+ h1.thesis {
+  margin: 32px 0;
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+.primary video {
+  width: 100%;
+}
+
+.primary#no-line {
+  width: 60%;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 26px;
+  border-right: none;
+}
+
+div#one shadowed.widget {
+  margin-top: 16px;
+  background-color: #d8d8d8;
+}
+
+/*----------- Footer----------*/
+
+
+footer {
+  padding-left: 24px;
+  border-top: 1px solid silver;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 46px;
+}
+
+div.nav {
+  padding-right: 24px;
+}
+
+
+.nav span {
+  padding-left: 16px;
+}
