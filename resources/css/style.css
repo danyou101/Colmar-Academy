@@ -44,6 +44,28 @@ nav.desktop.menu ul li {
   padding-right: 20px;
 }
 
+/*----------- Header Mobile ----------*/
+
+@media only screen and (min-width: 768px) {
+  .mobile.header {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .mobile.header {
+      display: flex;
+      justify-content: space-around;
+  }
+
+  .header.container {
+    display: none;
+  }
+
+
+}
+
 /*----------- Banner ----------*/
 
 #banner.container {
@@ -87,6 +109,55 @@ nav.desktop.menu ul li {
 .banner.content p.button:hover {
   background-color: black;
   transition: background-color .7s ease-in;
+}
+
+/*----------- Banner Mobile ----------*/
+
+@media only screen and (min-width: 768px) {
+  .mobile.banner {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #banner.container {
+    display: none;
+}
+
+  .mobile.banner img {
+    width: 100%;
+  }
+
+  .info {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 32px;
+    background-color: #d8d8d8;
+  }
+
+  .info h1 {
+    padding: 32px 0;
+    margin: 0;
+  }
+
+  .info p {
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin: 0;
+  }
+
+  p.button {
+    margin-top: 24px;
+    color: white;
+    background-color: #4a4a4a;
+    text-align: center;
+    padding: 8px;
+  }
+
+  div.image {
+    line-height: 0;
+  }
+
 }
 
 /*----------- Practice ----------*/
@@ -140,6 +211,47 @@ div#shadowed {
   margin-top: 32px;
 }
 
+
+/*----------- Practice Mobile ----------*/
+
+@media only screen and (min-width: 768px) {
+  .mobile.practice {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #practice.container {
+    display: none;
+  }
+
+  .widget {
+    flex-wrap: wrap;
+  }
+
+  .widget img {
+    width: 92.5%;
+  }
+
+  div.text {
+    padding-left: 16px;
+    padding-bottom: 16px;
+  }
+
+  div.text h3 {
+    margin: 0;
+  }
+
+  div.text p {
+    margin: 7px 0;
+  }
+
+  div#shadowed {
+    border-bottom: solid 1px silver;
+    padding-bottom: 32px;
+  }
+
+}
 
 /*----------- Learning -----------*/
 
